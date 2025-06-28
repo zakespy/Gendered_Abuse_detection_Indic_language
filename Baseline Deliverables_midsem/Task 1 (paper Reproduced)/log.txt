@@ -1,0 +1,150 @@
+Using device: cpu
+
+Fold 1/5
+C:\Users\shank\anaconda3\envs\nlpa1\Lib\site-packages\torch\nn\modules\conv.py:370: UserWarning: Using padding='same' with even kernel lengths and odd dilation may require a zero-padded copy of the input be created (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\native\Convolution.cpp:1037.)
+  return F.conv1d(
+Validation loss decreased (inf --> 0.613331).  Saving model ...
+Epoch 1/15: Train Loss: 0.6701, Train Acc: 0.7115, Val Loss: 0.6133, Val Acc: 0.6005
+EarlyStopping counter: 1 out of 7
+Epoch 2/15: Train Loss: 0.5905, Train Acc: 0.7346, Val Loss: 0.6358, Val Acc: 0.7890
+Validation loss decreased (0.613331 --> 0.594491).  Saving model ...
+Epoch 3/15: Train Loss: 0.5880, Train Acc: 0.7333, Val Loss: 0.5945, Val Acc: 0.7424
+Validation loss decreased (0.594491 --> 0.585101).  Saving model ...
+Epoch 4/15: Train Loss: 0.5707, Train Acc: 0.7492, Val Loss: 0.5851, Val Acc: 0.7308
+Validation loss decreased (0.585101 --> 0.573689).  Saving model ...
+Epoch 5/15: Train Loss: 0.5600, Train Acc: 0.7758, Val Loss: 0.5737, Val Acc: 0.7331
+EarlyStopping counter: 1 out of 7
+Epoch 6/15: Train Loss: 0.5617, Train Acc: 0.7470, Val Loss: 0.5820, Val Acc: 0.7277
+EarlyStopping counter: 2 out of 7
+Epoch 7/15: Train Loss: 0.5442, Train Acc: 0.7742, Val Loss: 0.5798, Val Acc: 0.7742
+EarlyStopping counter: 3 out of 7
+Epoch 8/15: Train Loss: 0.5371, Train Acc: 0.7909, Val Loss: 0.5889, Val Acc: 0.7882
+EarlyStopping counter: 4 out of 7
+Epoch 9/15: Train Loss: 0.5245, Train Acc: 0.8008, Val Loss: 0.5913, Val Acc: 0.7587
+EarlyStopping counter: 5 out of 7
+Epoch 10/15: Train Loss: 0.5307, Train Acc: 0.7948, Val Loss: 0.6144, Val Acc: 0.7742
+EarlyStopping counter: 6 out of 7
+Epoch 11/15: Train Loss: 0.5194, Train Acc: 0.8070, Val Loss: 0.5841, Val Acc: 0.7773
+EarlyStopping counter: 7 out of 7
+Early stopping triggered!
+
+Fold 2/5
+Validation loss decreased (inf --> 0.581313).  Saving model ...
+Epoch 1/15: Train Loss: 0.6689, Train Acc: 0.5139, Val Loss: 0.5813, Val Acc: 0.7091
+Validation loss decreased (0.581313 --> 0.562991).  Saving model ...
+Epoch 2/15: Train Loss: 0.6022, Train Acc: 0.7441, Val Loss: 0.5630, Val Acc: 0.7463
+Validation loss decreased (0.562991 --> 0.553986).  Saving model ...
+Epoch 3/15: Train Loss: 0.5871, Train Acc: 0.7498, Val Loss: 0.5540, Val Acc: 0.7285
+EarlyStopping counter: 1 out of 7
+Epoch 4/15: Train Loss: 0.5755, Train Acc: 0.7443, Val Loss: 0.5580, Val Acc: 0.7525
+EarlyStopping counter: 2 out of 7
+Epoch 5/15: Train Loss: 0.5607, Train Acc: 0.7598, Val Loss: 0.5575, Val Acc: 0.7114
+EarlyStopping counter: 3 out of 7
+Epoch 6/15: Train Loss: 0.5571, Train Acc: 0.7606, Val Loss: 0.5562, Val Acc: 0.7502
+EarlyStopping counter: 4 out of 7
+Epoch 7/15: Train Loss: 0.5528, Train Acc: 0.7688, Val Loss: 0.5556, Val Acc: 0.7238
+Validation loss decreased (0.553986 --> 0.553864).  Saving model ...
+Epoch 8/15: Train Loss: 0.5457, Train Acc: 0.7715, Val Loss: 0.5539, Val Acc: 0.7548
+EarlyStopping counter: 1 out of 7
+Epoch 9/15: Train Loss: 0.5385, Train Acc: 0.7798, Val Loss: 0.5612, Val Acc: 0.7766
+EarlyStopping counter: 2 out of 7
+Epoch 10/15: Train Loss: 0.5326, Train Acc: 0.7969, Val Loss: 0.5660, Val Acc: 0.7525
+EarlyStopping counter: 3 out of 7
+Epoch 11/15: Train Loss: 0.5142, Train Acc: 0.8052, Val Loss: 0.5618, Val Acc: 0.7773
+EarlyStopping counter: 4 out of 7
+Epoch 12/15: Train Loss: 0.5177, Train Acc: 0.7998, Val Loss: 0.5669, Val Acc: 0.7339
+EarlyStopping counter: 5 out of 7
+Epoch 13/15: Train Loss: 0.5137, Train Acc: 0.8035, Val Loss: 0.5699, Val Acc: 0.7176
+EarlyStopping counter: 6 out of 7
+Epoch 14/15: Train Loss: 0.5211, Train Acc: 0.7932, Val Loss: 0.5628, Val Acc: 0.7308
+EarlyStopping counter: 7 out of 7
+Early stopping triggered!
+
+Fold 3/5
+Validation loss decreased (inf --> 0.603905).  Saving model ...
+Epoch 1/15: Train Loss: 0.6800, Train Acc: 0.6464, Val Loss: 0.6039, Val Acc: 0.7029
+Validation loss decreased (0.603905 --> 0.581536).  Saving model ...
+Epoch 2/15: Train Loss: 0.6049, Train Acc: 0.7265, Val Loss: 0.5815, Val Acc: 0.6827
+EarlyStopping counter: 1 out of 7
+Epoch 3/15: Train Loss: 0.5777, Train Acc: 0.7389, Val Loss: 0.5829, Val Acc: 0.6827
+Validation loss decreased (0.581536 --> 0.562447).  Saving model ...
+Epoch 4/15: Train Loss: 0.5725, Train Acc: 0.7449, Val Loss: 0.5624, Val Acc: 0.7673
+EarlyStopping counter: 1 out of 7
+Epoch 5/15: Train Loss: 0.5653, Train Acc: 0.7548, Val Loss: 0.5712, Val Acc: 0.7114
+EarlyStopping counter: 2 out of 7
+Epoch 6/15: Train Loss: 0.5557, Train Acc: 0.7443, Val Loss: 0.5639, Val Acc: 0.7215
+EarlyStopping counter: 3 out of 7
+Epoch 7/15: Train Loss: 0.5341, Train Acc: 0.7761, Val Loss: 0.5626, Val Acc: 0.7277
+EarlyStopping counter: 4 out of 7
+Epoch 8/15: Train Loss: 0.5452, Train Acc: 0.7763, Val Loss: 0.5684, Val Acc: 0.7401
+EarlyStopping counter: 5 out of 7
+Epoch 9/15: Train Loss: 0.5180, Train Acc: 0.7959, Val Loss: 0.5639, Val Acc: 0.7580
+EarlyStopping counter: 6 out of 7
+Epoch 10/15: Train Loss: 0.5393, Train Acc: 0.7804, Val Loss: 0.5702, Val Acc: 0.7091
+EarlyStopping counter: 7 out of 7
+Early stopping triggered!
+
+Fold 4/5
+Validation loss decreased (inf --> 0.635090).  Saving model ...
+Epoch 1/15: Train Loss: 0.6591, Train Acc: 0.6169, Val Loss: 0.6351, Val Acc: 0.5632
+Validation loss decreased (0.635090 --> 0.587598).  Saving model ...
+Epoch 2/15: Train Loss: 0.5988, Train Acc: 0.7315, Val Loss: 0.5876, Val Acc: 0.7215
+Validation loss decreased (0.587598 --> 0.572530).  Saving model ...
+Epoch 3/15: Train Loss: 0.5784, Train Acc: 0.7358, Val Loss: 0.5725, Val Acc: 0.7013
+Validation loss decreased (0.572530 --> 0.565831).  Saving model ...
+Epoch 4/15: Train Loss: 0.5678, Train Acc: 0.7534, Val Loss: 0.5658, Val Acc: 0.7386
+EarlyStopping counter: 1 out of 7
+Epoch 5/15: Train Loss: 0.5548, Train Acc: 0.7651, Val Loss: 0.5664, Val Acc: 0.7409
+Validation loss decreased (0.565831 --> 0.561265).  Saving model ...
+Epoch 6/15: Train Loss: 0.5561, Train Acc: 0.7589, Val Loss: 0.5613, Val Acc: 0.7556
+EarlyStopping counter: 1 out of 7
+Epoch 7/15: Train Loss: 0.5465, Train Acc: 0.7618, Val Loss: 0.5681, Val Acc: 0.7680
+EarlyStopping counter: 2 out of 7
+Epoch 8/15: Train Loss: 0.5314, Train Acc: 0.7771, Val Loss: 0.5782, Val Acc: 0.7060
+EarlyStopping counter: 3 out of 7
+Epoch 9/15: Train Loss: 0.5326, Train Acc: 0.7758, Val Loss: 0.5684, Val Acc: 0.7510
+EarlyStopping counter: 4 out of 7
+Epoch 10/15: Train Loss: 0.5252, Train Acc: 0.7955, Val Loss: 0.5712, Val Acc: 0.7533
+EarlyStopping counter: 5 out of 7
+Epoch 11/15: Train Loss: 0.5204, Train Acc: 0.8076, Val Loss: 0.5848, Val Acc: 0.7036
+EarlyStopping counter: 6 out of 7
+Epoch 12/15: Train Loss: 0.5104, Train Acc: 0.8198, Val Loss: 0.5712, Val Acc: 0.7370
+EarlyStopping counter: 7 out of 7
+Early stopping triggered!
+
+Fold 5/5
+Validation loss decreased (inf --> 0.627047).  Saving model ...
+Epoch 1/15: Train Loss: 0.6721, Train Acc: 0.5700, Val Loss: 0.6270, Val Acc: 0.7492
+Validation loss decreased (0.627047 --> 0.597922).  Saving model ...
+Epoch 2/15: Train Loss: 0.5990, Train Acc: 0.7325, Val Loss: 0.5979, Val Acc: 0.7166
+Validation loss decreased (0.597922 --> 0.582513).  Saving model ...
+Epoch 3/15: Train Loss: 0.5897, Train Acc: 0.7426, Val Loss: 0.5825, Val Acc: 0.7430
+EarlyStopping counter: 1 out of 7
+Epoch 4/15: Train Loss: 0.5699, Train Acc: 0.7632, Val Loss: 0.5875, Val Acc: 0.7306
+EarlyStopping counter: 2 out of 7
+Epoch 5/15: Train Loss: 0.5537, Train Acc: 0.7758, Val Loss: 0.6003, Val Acc: 0.7477
+EarlyStopping counter: 3 out of 7
+Epoch 6/15: Train Loss: 0.5511, Train Acc: 0.7706, Val Loss: 0.5934, Val Acc: 0.7042
+EarlyStopping counter: 4 out of 7
+Epoch 7/15: Train Loss: 0.5467, Train Acc: 0.7739, Val Loss: 0.5959, Val Acc: 0.7399
+EarlyStopping counter: 5 out of 7
+Epoch 8/15: Train Loss: 0.5373, Train Acc: 0.7832, Val Loss: 0.5959, Val Acc: 0.7182
+Validation loss decreased (0.582513 --> 0.581378).  Saving model ...
+Epoch 9/15: Train Loss: 0.5246, Train Acc: 0.7901, Val Loss: 0.5814, Val Acc: 0.7453
+EarlyStopping counter: 1 out of 7
+Epoch 10/15: Train Loss: 0.5262, Train Acc: 0.8029, Val Loss: 0.5915, Val Acc: 0.7694
+EarlyStopping counter: 2 out of 7
+Epoch 11/15: Train Loss: 0.5183, Train Acc: 0.8026, Val Loss: 0.5885, Val Acc: 0.7585
+EarlyStopping counter: 3 out of 7
+Epoch 12/15: Train Loss: 0.5124, Train Acc: 0.8189, Val Loss: 0.5926, Val Acc: 0.7671
+EarlyStopping counter: 4 out of 7
+Epoch 13/15: Train Loss: 0.5092, Train Acc: 0.8125, Val Loss: 0.5832, Val Acc: 0.7539
+EarlyStopping counter: 5 out of 7
+Epoch 14/15: Train Loss: 0.5045, Train Acc: 0.8218, Val Loss: 0.5929, Val Acc: 0.7391
+EarlyStopping counter: 6 out of 7
+Epoch 15/15: Train Loss: 0.5013, Train Acc: 0.8297, Val Loss: 0.5952, Val Acc: 0.7492
+
+Average Metrics:
+Precision: 0.8102
+Recall: 0.7609
+F1-Score: 0.7769

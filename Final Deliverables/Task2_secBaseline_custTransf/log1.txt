@@ -1,0 +1,77 @@
+Epoch 18/18: Train Loss: 0.4113, Train Acc: 0.8046, Val Loss: 0.4564, Val Acc: 0.7831, Skipped batches: 0/2810
+
+Final Model Metrics:
+Accuracy: 0.7831
+Precision (Macro): 0.7739
+Recall (Macro): 0.7786
+F1-Score (Macro): 0.7758
+
+Detailed Classification Report:
+              precision    recall  f1-score   support
+
+    Not Hate       0.72      0.76      0.74      4477
+        Hate       0.83      0.80      0.82      6760
+
+    accuracy                           0.78     11237
+   macro avg       0.77      0.78      0.78     11237
+weighted avg       0.79      0.78      0.78     11237
+
+---<<<Hate Dehate Detection on Hate Test Data ------------------->>-----
+
+Loaded checkpoint from final_model.pt
+Loaded model configuration: {'max_features': 15000, 'embed_size': 768, 'max_len': 150}
+Word index size: 12624
+Creating sequences from test data using saved word index...
+Test data shape after processing: (19511, 150)
+Actual vocabulary size from checkpoint: 12624
+Model loaded successfully
+Running inference...
+Running inference: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1220/1220 [00:30<00:00, 40.50it/s]
+Inference complete. Generated 19511 predictions.
+
+Predicted Label Distribution:
+prediction
+Hate        11560
+Not Hate     7951
+Name: count, dtype: int64
+
+Prediction Distribution by Language:
+
+EN Predictions:
+prediction
+Hate        5583
+Not Hate    1200
+Name: count, dtype: int64
+Total en samples: 6783
+
+HI Predictions:
+prediction
+Not Hate    3830
+Hate        2898
+Name: count, dtype: int64
+Total hi samples: 6728
+
+TA Predictions:
+prediction
+Hate        3079
+Not Hate    2921
+Name: count, dtype: int64
+Total ta samples: 6000
+
+Saved predictions to test_predictions.csv
+
+Evaluating performance on test set...
+Test Accuracy: 0.7878
+Test Precision (Macro): 0.7765
+Test Recall (Macro): 0.7812
+Test F1-Score (Macro): 0.7785
+
+Detailed Classification Report:
+              precision    recall  f1-score   support
+
+    Not Hate       0.72      0.75      0.73      7568
+        Hate       0.84      0.81      0.82     11943
+
+    accuracy                           0.79     19511
+   macro avg       0.78      0.78      0.78     19511
+weighted avg       0.79      0.79      0.79     19511

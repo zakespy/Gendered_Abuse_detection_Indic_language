@@ -1,0 +1,176 @@
+(yolov11_env) najiya@najiya-B760M-Pro-RS-D4:~/Downloads/nlp_final/t2_files$ python try1b.py
+2025-04-14 23:17:43.698268: I tensorflow/core/util/port.cc:110] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-04-14 23:17:43.729906: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-04-14 23:17:44.475750: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Using device: cuda
+Loading model from 'final_model.pt'...
+try1b.py:636: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load('final_model.pt', map_location=device)
+Model loaded with config: max_features=15000, embed_size=768, max_len=150
+Original vocabulary size: 12624
+Actual embedding matrix size in pre-trained model: 12624
+Loaded en training data: 6531 rows
+Loaded hi training data: 6197 rows
+Loaded ta training data: 6779 rows
+Combined dataset size: 19507 rows
+Preprocessing training data...
+Label distribution: [13421  5921]
+One-hot shape: (19342, 2)
+Using existing word index with vocabulary size: 12624
+Embedding matrix stats: min=-3.3653600215911865, max=3.3730921745300293, mean=-0.00040899720636036627
+Training set size: 15473, Validation set size: 3869
+Class weights: tensor([0.7206, 1.6333], device='cuda:0')
+Pre-trained weights loaded successfully
+/home/najiya/anaconda3/envs/yolov11_env/lib/python3.8/site-packages/torch/optim/lr_scheduler.py:60: UserWarning: The verbose parameter is deprecated. Please use get_last_lr() to access the learning rate.
+  warnings.warn(
+
+Fine-tuning model...
+Epoch 1/15 [Train]: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1290/1290 [01:17<00:00, 16.60it/s, loss=0.369]
+Epoch 1/15 [Val]: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 323/323 [00:07<00:00, 45.84it/s, loss=0.689]
+
+Epoch 1/15 Summary:
+Train Loss: 0.7302, Train Acc: 0.6918, Train F1: 0.4546
+Val Loss: 0.6897, Val Acc: 0.7030, Val F1: 0.5137
+New best model saved with validation F1: 0.5137
+Validation loss decreased (inf --> 0.689672).  Saving model ...
+Epoch 2/15 [Train]: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1290/1290 [01:18<00:00, 16.42it/s, loss=0.662]
+Epoch 2/15 [Val]: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 323/323 [00:07<00:00, 45.43it/s, loss=0.605]
+
+Epoch 2/15 Summary:
+Train Loss: 0.6742, Train Acc: 0.7258, Train F1: 0.5867
+Val Loss: 0.6541, Val Acc: 0.7377, Val F1: 0.6339
+New best model saved with validation F1: 0.6339
+Validation loss decreased (0.689672 --> 0.654059).  Saving model ...
+Epoch 3/15 [Train]: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1290/1290 [01:18<00:00, 16.37it/s, loss=0.489]
+Epoch 3/15 [Val]: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 323/323 [00:07<00:00, 45.41it/s, loss=0.588]
+
+Epoch 3/15 Summary:
+Train Loss: 0.6478, Train Acc: 0.7448, Train F1: 0.6369
+Val Loss: 0.6433, Val Acc: 0.7470, Val F1: 0.6713
+New best model saved with validation F1: 0.6713
+Validation loss decreased (0.654059 --> 0.643319).  Saving model ...
+Epoch 4/15 [Train]: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1290/1290 [01:18<00:00, 16.34it/s, loss=0.736]
+Epoch 4/15 [Val]: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 323/323 [00:07<00:00, 45.38it/s, loss=0.589]
+
+Epoch 4/15 Summary:
+Train Loss: 0.6290, Train Acc: 0.7587, Train F1: 0.6684
+Val Loss: 0.6363, Val Acc: 0.7526, Val F1: 0.6835
+New best model saved with validation F1: 0.6835
+Validation loss decreased (0.643319 --> 0.636318).  Saving model ...
+Epoch 5/15 [Train]: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1290/1290 [01:18<00:00, 16.34it/s, loss=0.634]
+Epoch 5/15 [Val]: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 323/323 [00:07<00:00, 45.08it/s, loss=0.369]
+
+Epoch 5/15 Summary:
+Train Loss: 0.6152, Train Acc: 0.7649, Train F1: 0.6808
+Val Loss: 0.6422, Val Acc: 0.7589, Val F1: 0.6606
+EarlyStopping counter: 1 out of 5
+Epoch 6/15 [Train]: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1290/1290 [01:19<00:00, 16.31it/s, loss=1.04]
+Epoch 6/15 [Val]: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 323/323 [00:07<00:00, 45.30it/s, loss=0.427]
+
+Epoch 6/15 Summary:
+Train Loss: 0.6021, Train Acc: 0.7693, Train F1: 0.6909
+Val Loss: 0.6257, Val Acc: 0.7617, Val F1: 0.6869
+New best model saved with validation F1: 0.6869
+Validation loss decreased (0.636318 --> 0.625711).  Saving model ...
+Epoch 7/15 [Train]: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1290/1290 [01:19<00:00, 16.31it/s, loss=0.582]
+Epoch 7/15 [Val]: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 323/323 [00:07<00:00, 45.40it/s, loss=0.641]
+
+Epoch 7/15 Summary:
+Train Loss: 0.5939, Train Acc: 0.7724, Train F1: 0.6972
+Val Loss: 0.6441, Val Acc: 0.7433, Val F1: 0.6902
+New best model saved with validation F1: 0.6902
+EarlyStopping counter: 1 out of 5
+Epoch 8/15 [Train]: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1290/1290 [01:19<00:00, 16.29it/s, loss=0.574]
+Epoch 8/15 [Val]: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 323/323 [00:07<00:00, 45.31it/s, loss=0.526]
+
+Epoch 8/15 Summary:
+Train Loss: 0.5788, Train Acc: 0.7795, Train F1: 0.7124
+Val Loss: 0.6286, Val Acc: 0.7578, Val F1: 0.6941
+New best model saved with validation F1: 0.6941
+EarlyStopping counter: 2 out of 5
+Epoch 9/15 [Train]: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1290/1290 [01:19<00:00, 16.27it/s, loss=0.178]
+Epoch 9/15 [Val]: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 323/323 [00:07<00:00, 45.35it/s, loss=0.655]
+
+Epoch 9/15 Summary:
+Train Loss: 0.5729, Train Acc: 0.7827, Train F1: 0.7182
+Val Loss: 0.6404, Val Acc: 0.7439, Val F1: 0.6904
+EarlyStopping counter: 3 out of 5
+Epoch 10/15 [Train]: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1290/1290 [01:19<00:00, 16.27it/s, loss=0.561]
+Epoch 10/15 [Val]: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 323/323 [00:07<00:00, 45.10it/s, loss=0.589]
+
+Epoch 10/15 Summary:
+Train Loss: 0.5608, Train Acc: 0.7876, Train F1: 0.7273
+Val Loss: 0.6292, Val Acc: 0.7503, Val F1: 0.6944
+New best model saved with validation F1: 0.6944
+EarlyStopping counter: 4 out of 5
+Epoch 11/15 [Train]: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1290/1290 [01:19<00:00, 16.25it/s, loss=0.355]
+Epoch 11/15 [Val]: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 323/323 [00:07<00:00, 44.93it/s, loss=0.475]
+
+Epoch 11/15 Summary:
+Train Loss: 0.5428, Train Acc: 0.7951, Train F1: 0.7385
+Val Loss: 0.6274, Val Acc: 0.7601, Val F1: 0.6877
+EarlyStopping counter: 5 out of 5
+Early stopping triggered!
+Loaded best model with validation F1: 0.6944
+Saving fine-tuned model...
+
+<<<<<---------------------testing finetuned model on Gender Abuse Data ----------------------->>>>>
+
+Loaded finetuned model checkpoint from finetuned_gendered_abuse_model.pt
+Loaded model configuration: {'max_features': 12624, 'embed_size': 768, 'max_len': 150}
+Word index size: 12624
+Actual vocabulary size from checkpoint: 12624
+Creating sequences from test data using saved word index...
+Test data shape after processing: (3759, 150)
+Model loaded successfully and set to evaluation mode
+Running inference with finetuned model...
+Running inference: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 314/314 [00:06<00:00, 48.65it/s]
+Inference complete. Generated 3759 predictions.
+
+Predicted Label Distribution:
+prediction
+Not Hate    2249
+Hate        1510
+Name: count, dtype: int64
+
+Prediction Distribution by Language:
+
+EN Predictions:
+prediction
+Not Hate    921
+Hate        186
+Name: count, dtype: int64
+Total en samples: 1107
+
+HI Predictions:
+prediction
+Not Hate    1118
+Hate         399
+Name: count, dtype: int64
+Total hi samples: 1517
+
+TA Predictions:
+prediction
+Hate        925
+Not Hate    210
+Name: count, dtype: int64
+Total ta samples: 1135
+
+Saved predictions to finetuned_model_predictions.csv
+
+Evaluating performance of finetuned model on test set...
+Finetuned Model Test Accuracy: 0.6442
+Finetuned Model Test Precision (Macro): 0.6091
+Finetuned Model Test Recall (Macro): 0.6250
+Finetuned Model Test F1-Score (Macro): 0.6094
+
+Detailed Classification Report:
+              precision    recall  f1-score   support
+
+    Not Hate       0.79      0.67      0.73      2581
+        Hate       0.43      0.58      0.49      1104
+
+    accuracy                           0.64      3685
+   macro avg       0.61      0.62      0.61      3685
+weighted avg       0.68      0.64      0.66      3685
